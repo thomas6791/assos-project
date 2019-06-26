@@ -13,11 +13,12 @@ h1 { font-size: 2em; }
 #alentours {
   min-height: 100vh;
   section {
+    padding: 0px 45px;
     border: solid 1px red;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 10px;
+    grid-column-gap: 45px;
     grid-row-gap: 10px;
   }
 }

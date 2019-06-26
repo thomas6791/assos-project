@@ -2,13 +2,30 @@
   border: solid 1px;
   height: 350px;
   position: relative;
-  h2 {
-    font-family: 'Candara';
-    width: 100%;
-    text-align: center;
-    font-size: 1.2em;
-    text-align: center;
+  .footer {
     position: absolute;
     bottom: 0px;
+    width: 100%;
+    h2 {
+      font-family: 'Candara';
+      width: 100%;
+      text-align: center;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .hide-content {
+      .more {
+        text-align: center;
+      }
+      .content {
+        height: 0px;
+        opacity: 0;
+        &:hover {
+          height: 100%;
+          opacity: 1;
+        }
+      }
+    }
   }
+
 }

@@ -16,19 +16,21 @@
       color: white;
     }
     .hide-content {
+      border: solid 1px white;
       .more {
         text-align: center;
         height: 3em;
         line-height: 3em;
         color: white;
         display: block;
-        border: solid 1px;
       }
       .content {
         height: 0px;
         opacity: 0;
         color: white;
-        &:hover {
+      }
+      &:hover {
+        .content {
           height: 90%;
           opacity: 1;
         }

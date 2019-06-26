@@ -15,13 +15,13 @@ h1 { font-size: 2em; }
   section {
     border: solid 1px red;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     .card {
       border: solid 1px;
-      height: 50px;
+      height: 320px;
     }
   }
 }

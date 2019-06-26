@@ -1,0 +1,12 @@
+.card {
+  border: solid 1px;
+  height: 320px;
+  position: relative;
+  h2 {
+    font-family: 'Candara';
+    font-size: 1.2em;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+  }
+}

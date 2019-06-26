@@ -33,10 +33,7 @@
         .content {
           height: 90%;
           opacity: 1;
-          transition-property: height; /* Active la transition sur background-color */
-          transition-duration: 1s;
-          transition-property: opacity; /* Active la transition sur background-color */
-          transition-duration: 1.2s;
+          transition: height 1s ease, opacity 1.2s ease;
         }
       }
     }

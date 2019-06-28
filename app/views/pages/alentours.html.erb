@@ -5,59 +5,20 @@
 </header>
 <main id="alentours">
   <section>
-    <div class="card">
-      <%= image_tag "wegelnburg.jpg" %>
-      <div class="footer">
-        <h2>Chemin des châteaux forts d'Alsace</h2>
-        <div class="hide-content">
-          <p class="more">En savoir plus</p>
-          <p class="content">
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-          </p>
+    <% @cards.each do |card| %>
+      <div class="card">
+        <%= image_tag "#{card[:photo]}" %>
+        <div class="footer">
+          <h2><%= card[:name] %></h2>
+          <div class="hide-content">
+            <p class="more">En savoir plus</p>
+            <p class="content">
+              <%= card[:description] %>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <%= image_tag "strasbourg.jpg" %>
-      <div class="footer">
-        <h2>Strasbourg</h2>
-        <div class="hide-content">
-          <p class="more">En savoir plus</p>
-          <p class="content">
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <%= image_tag "schoeneck.jpg" %>
-      <div class="footer">
-        <h2>Château du Schoeneck</h2>
-        <div class="hide-content">
-          <p class="more">En savoir plus</p>
-          <p class="content">
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-            bonjout fhzbefbqezgbqzm hfbhzbghez
-            gioergbuerbguerbg fbzibguearbgbreugberiu
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card"></div>
-    <div class="card"></div>
+    <% end %>
   </section>
 </main>
 

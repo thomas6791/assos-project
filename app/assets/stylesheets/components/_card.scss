@@ -21,7 +21,7 @@
       color: white;
     }
     .hide-content {
-      border: solid 1px white;
+      //border: solid 1px white;
       .more {
         text-align: center;
         height: 3em;
@@ -36,7 +36,7 @@
       }
       &:hover {
         .content {
-          height: 90%;
+          height: 100%;
           opacity: 1;
           padding: 0px 10px 10px;
           transition: height 1s ease, opacity 1.5s ease;

@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 
   def alentours
     require 'yaml'
-    @cards = YAML.load(File.read("config/cards.yml"))[:cards]
+    @cards = YAML.load(File.read("config/cards.yml"))[:cards][locale.to_s]
   end
 
   def contact

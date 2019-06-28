@@ -3,6 +3,9 @@ class PagesController < ApplicationController
   end
 
   def alentours
+    require 'yaml'
+    cards = YAML.load(File.read("config/cards.yml"))
+    fail
   end
 
   def contact
